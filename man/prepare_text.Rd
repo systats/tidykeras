@@ -4,7 +4,8 @@
 \alias{prepare_text}
 \title{prepare_text}
 \usage{
-prepare_text(data, in_dim = 10000, in_length = 100, char_level = F, ...)
+prepare_text(data, in_dim = 10000, in_length = 100, char_level = F,
+  return_tokenizer = F, ...)
 }
 \arguments{
 \item{data}{list constisting of train and test set}

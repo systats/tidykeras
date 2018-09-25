@@ -120,3 +120,30 @@ corpus_description <- function(data, text){
   )
   return(out)
 }
+
+#' k_sent
+#'
+#' @param filename file name
+#' @return out ...
+#'
+#' @export
+
+k_sent <- function (filename = "k_sent") {
+  print("Hello World")
+  tidypath_fragment <- "/tidykeras/rmarkdown/templates/template-sent/skeleton/skeleton.Rmd"
+  tidypath <- paste0(.libPaths(), tidypath_fragment)[1]
+  wdpath <- paste0(getwd(), "/", filename, ".Rmd")
+  if (file.exists(tidypath)) {
+    file.copy(from = tidypath, to = wdpath)
+    file.edit(wdpath)
+  }
+}
+
+
+
+
+
+
+
+
+
