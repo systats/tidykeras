@@ -129,7 +129,7 @@ corpus_description <- function(data, text){
 #' @export
 
 k_sent <- function (filename = "k_sent") {
-  print("Hello World")
+
   tidypath_fragment <- "/tidykeras/rmarkdown/templates/template-sent/skeleton/skeleton.Rmd"
   tidypath <- paste0(.libPaths(), tidypath_fragment)[1]
   wdpath <- paste0(getwd(), "/", filename, ".Rmd")
